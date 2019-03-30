@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bulma/css/bulma.css';
-import foods from ',/foods.json'
-import FoodBox from './component/FoodBox'
+import FoodBox from './FoodBox';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {foods.map(element =>{
-          <FoodBox  food= {element}/>
-        })}
+        <FoodBox />
       </div>
     );
   }
